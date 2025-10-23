@@ -55,23 +55,31 @@ This project implements a simple **blog API system** with three main components:
 ```
 
 .
-├── backend/
-│   ├── Dockerfile
-│   ├── go.mod
-│   ├── go.sum
-│   └── main.go
-├── db-data-pv.yaml
-├── db-data-pvc.yaml
-├── db-secret.yaml
-├── backend_deployment.yaml
-├── backend_service.yaml
-├── database_deployment.yaml
-├── db-service.yaml
-├── proxy_deployment.yaml
-├── proxy_nodeport.yaml
-├── generate-ssl.sh
+├── backend
+│   ├── Dockerfile
+│   ├── go.mod
+│   ├── go.sum
+│   └── main.go
 ├── docker-compose.yaml
-└── executed_commands.sh
+├── Excuted_Commands.sh
+├── files.sh
+├── K8S
+│   ├── backend_deployment.yaml
+│   ├── backend_service.yaml
+│   ├── database_deployment.yaml
+│   ├── db-data-pvc.yaml
+│   ├── db-data-pv.yaml
+│   ├── db-secret.yaml
+│   ├── db-service.yaml
+│   ├── proxy_deployment.yaml
+│   └── proxy_nodeport.yaml
+└── nginx
+    ├── Dockerfile
+    ├── generate-ssl.sh
+    ├── nginx.conf
+    └── ssl
+        ├── selfsigned.crt
+        └── selfsigned.key
 
 ````
 
