@@ -18,7 +18,7 @@ Deployed automatically using Ansible Role: Apache
 ---
 
 ## Project Structure
-```
+
 
 roles/
 └── apache/
@@ -231,13 +231,12 @@ Visiting `http://localhost` should return:
 * [Ansible Galaxy Roles](https://galaxy.ansible.com/)
 
 
+![WhatsApp Image 2025-10-24 at 00 04 45_9d2b988b](https://github.com/user-attachments/assets/f9271b9f-67b1-4842-8967-65b136005b46)
+![WhatsApp Image 2025-10-24 at 00 04 44_2071a10f](https://github.com/user-attachments/assets/ca920db7-66aa-4254-a14f-fc6e16d68802)
+![WhatsApp Image 2025-10-24 at 00 04 44_72af0453](https://github.com/user-attachments/assets/c7cdc6a1-6965-43f4-8623-58d806eb9ad4)
+<img width="1366" height="713" alt="Screenshot (522)" src="https://github.com/user-attachments/assets/75fe81bd-4b96-4637-a918-434ba48e0568" />
+![WhatsApp Image 2025-10-24 at 00 04 46_4eeb130d](https://github.com/user-attachments/assets/52a07a9e-bb00-418b-b508-efeeccf4a29a)
 
-
-<img width="1366" height="713" alt="Screenshot (522)" src="https://github.com/user-attachments/assets/bcf089c8-5087-4a29-bab6-375efb124006" />
-![WhatsApp Image 2025-10-24 at 00 04 46_4eeb130d](https://github.com/user-attachments/assets/abfd844a-88d6-4383-8232-0068d323ebd9)
-![WhatsApp Image 2025-10-24 at 00 04 45_9d2b988b](https://github.com/user-attachments/assets/50e8f27c-fef3-4eca-88cb-7edd4dd1827a)
-![WhatsApp Image 2025-10-24 at 00 04 44_2071a10f](https://github.com/user-attachments/assets/347fc6a0-8602-4477-b273-5fde08a8f185)
-![WhatsApp Image 2025-10-24 at 00 04 44_72af0453](https://github.com/user-attachments/assets/06706b59-c942-4849-8809-6b681dcd1a9b)
 
 
 
