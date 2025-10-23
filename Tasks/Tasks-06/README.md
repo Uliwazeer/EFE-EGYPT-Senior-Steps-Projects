@@ -42,7 +42,7 @@ Two parts:
 - Control machine with **Ansible** installed (Ansible 2.9+ / ansible-core 2.12+ recommended).  
   ```bash
   ansible --version
-````
+
 
 * An inventory file listing your target hosts and reachable over SSH.
 * Target hosts reachable and configured with SSH keys or credentials.
@@ -225,7 +225,7 @@ host1 | CHANGED => {"changed": true, ...}
           - "Return code: {{ webpkg_version.rc }}"
           - "Stdout: {{ webpkg_version.stdout | default('') }}"
           - "Stderr: {{ webpkg_version.stderr | default('') }}"
-```
+
 
 ### How it works (task by task)
 
@@ -275,7 +275,7 @@ ansible all -i inventory -b -m package -a "name=nginx state=absent"
 
 ```bash
 ansible-playbook -i inventory package_manage.yml --ask-become-pass
-```
+
 
 * Enter sudo password when prompted.
 * To run without prompt but using stored credentials/ssh setup, omit `--ask-become-pass` and use `--become`.
@@ -323,7 +323,7 @@ ok: [host1] => {
 PLAY RECAP **********************************************************************
 host1                      : ok=8    changed=4    unreachable=0    failed=0
 host2                      : ok=8    changed=4    unreachable=0    failed=0
-```
+
 
 ---
 
@@ -342,7 +342,7 @@ host2                      : ok=8    changed=4    unreachable=0    failed=0
 
 Create `ad-hoc-examples.sh` for quick ad‑hoc execution (make executable: `chmod +x ad-hoc-examples.sh`):
 
-```bash
+bash
 #!/usr/bin/env bash
 INV=inventory
 
@@ -357,7 +357,7 @@ ansible all -i $INV -b -m command -a "nginx -v"
 
 echo "Remove nginx"
 ansible all -i $INV -b -m package -a "name=nginx state=absent"
-```
+
 
 ---
 
@@ -376,5 +376,18 @@ If you want, I can:
 * Generate a step‑by‑step video/CLI script tailored to your inventory.
 
 Happy automating! 🚀
+
+<img width="1366" height="708" alt="Screenshot (498)" src="https://github.com/user-attachments/assets/21d36d3a-d701-4241-9267-457b59e751b0" />
+<img width="1366" height="542" alt="Screenshot (497)" src="https://github.com/user-attachments/assets/a22d8970-4ec7-424d-b5c7-2dad13298ec0" />
+<img width="1366" height="704" alt="Screenshot (496)" src="https://github.com/user-attachments/assets/ea59c7b5-ae02-4408-a371-0f7484de035b" />
+<img width="1366" height="683" alt="Screenshot (493)" src="https://github.com/user-attachments/assets/5663732d-7a4a-42af-82f9-677ae1a5af66" />
+<img width="1366" height="704" alt="Screenshot (492)" src="https://github.com/user-attachments/assets/bd630ab4-f5bc-4a12-bfd2-58f5e1af0f97" />
+<img width="1366" height="713" alt="Screenshot (491)" src="https://github.com/user-attachments/assets/6978c76f-56e0-4d22-b7c9-5b57acc3ce15" />
+<img width="1366" height="704" alt="Screenshot (490)" src="https://github.com/user-attachments/assets/cf4f1a73-cb6e-4b49-ac04-96e1d9c55b78" />
+<img width="1366" height="713" alt="Screenshot (488)" src="https://github.com/user-attachments/assets/7c3ccb1b-e242-402f-9566-84098eda685f" />
+<img width="1366" height="293" alt="Screenshot (487)" src="https://github.com/user-attachments/assets/73ddaed2-e197-409a-95b9-a2fb1a5e751c" />
+<img width="1366" height="704" alt="Screenshot (486)" src="https://github.com/user-attachments/assets/305ddb6a-aeb7-43c7-a15e-9188c8a8c3d9" />
+<img width="1366" height="708" alt="Screenshot (485)" src="https://github.com/user-attachments/assets/6c68f60f-2aae-4d01-958f-4f2801b1c8d9" />
+<img width="1366" height="713" alt="Screenshot (484)" src="https://github.com/user-attachments/assets/b7b56119-7a89-48f8-a678-c31ab9c41a39" />
 
 
