@@ -55,23 +55,31 @@ This project implements a simple **blog API system** with three main components:
 ```
 
 .
-├── backend/
-│   ├── Dockerfile
-│   ├── go.mod
-│   ├── go.sum
-│   └── main.go
-├── db-data-pv.yaml
-├── db-data-pvc.yaml
-├── db-secret.yaml
-├── backend_deployment.yaml
-├── backend_service.yaml
-├── database_deployment.yaml
-├── db-service.yaml
-├── proxy_deployment.yaml
-├── proxy_nodeport.yaml
-├── generate-ssl.sh
+├── backend
+│   ├── Dockerfile
+│   ├── go.mod
+│   ├── go.sum
+│   └── main.go
 ├── docker-compose.yaml
-└── executed_commands.sh
+├── Excuted_Commands.sh
+├── files.sh
+├── K8S
+│   ├── backend_deployment.yaml
+│   ├── backend_service.yaml
+│   ├── database_deployment.yaml
+│   ├── db-data-pvc.yaml
+│   ├── db-data-pv.yaml
+│   ├── db-secret.yaml
+│   ├── db-service.yaml
+│   ├── proxy_deployment.yaml
+│   └── proxy_nodeport.yaml
+└── nginx
+    ├── Dockerfile
+    ├── generate-ssl.sh
+    ├── nginx.conf
+    └── ssl
+        ├── selfsigned.crt
+        └── selfsigned.key
 
 ````
 
@@ -197,6 +205,3 @@ We created a script to automate all commands for building, deploying, and testin
 <img width="1366" height="713" alt="Screenshot (507)" src="https://github.com/user-attachments/assets/9a88982a-8096-4057-b529-e2f38044c02e" />
 <img width="1366" height="516" alt="Screenshot (506)" src="https://github.com/user-attachments/assets/ef921f0f-6deb-46b4-8ff9-1afe65a72af8" />
 ![WhatsApp Image 2025-10-23 at 20 02 45_1c2a3a52](https://github.com/user-attachments/assets/bfd02945-7771-4f2f-82ff-9222c1e27044)
-<img width="1366" height="136" alt="Screenshot (516)" src="https://github.com/user-attachments/assets/b6989fa2-dfc2-4ed6-800b-0446fdc3721e" />
-
-
