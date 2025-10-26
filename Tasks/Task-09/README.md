@@ -1,7 +1,9 @@
 # 🚀 Node.js Dockerization Task
 
 **Branch:** `nodejs-docker-task`
-**Branch:** `Don't Forget To Clone Source From Repo https://github.com/abdelrahmanonline4/EFE-Labs-.git`
+
+**Don't Forget:** `To Clone Source From Repo https://github.com/abdelrahmanonline4/EFE-Labs-.git`
+
 ## 📌 Task Overview
 
 This project demonstrates how to containerize a Node.js application using Docker, deploy it locally, and push it to a specific GitHub branch. The Dockerized application is built to run consistently across environments using a simple and reproducible workflow.
