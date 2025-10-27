@@ -104,3 +104,14 @@ Expected Port: **3000**
 * Screenshot of each stage passing
 * Screenshot of Docker container running
 
+![WhatsApp Image 2025-10-27 at 21 20 00_7dd19e08](https://github.com/user-attachments/assets/0626623b-b8a6-4bc1-9ddd-740f796ce8d2)
+![WhatsApp Image 2025-10-27 at 21 19 56_c4d241c0](https://github.com/user-attachments/assets/c4115d73-873d-49f0-8e20-fd9ae9b00ce9)
+![WhatsApp Image 2025-10-27 at 21 19 56_3413b082](https://github.com/user-attachments/assets/6cf0529b-c21c-4398-89a5-5c466d5499e0)
+![WhatsApp Image 2025-10-27 at 21 27 29_18b68015](https://github.com/user-attachments/assets/aca830ce-bdb7-441f-a578-a9b3a50e0fa7)
+![WhatsApp Image 2025-10-27 at 21 27 28_cf56b9aa](https://github.com/user-attachments/assets/5e7e20b4-15e2-4d42-810b-b5f64211d324)
+![WhatsApp Image 2025-10-27 at 21 20 01_f8509f39](https://github.com/user-attachments/assets/54188a87-1e3e-43a2-b180-147f558d2876)
+![WhatsApp Image 2025-10-27 at 21 20 00_dbe78640](https://github.com/user-attachments/assets/d95e68ce-430a-418b-b3df-d6f04abab760)
+![WhatsApp Image 2025-10-27 at 21 20 00_c1a8aab9](https://github.com/user-attachments/assets/9bf1ea30-4389-4bc6-8aab-67b39cd9ce6e)
+![WhatsApp Image 2025-10-27 at 21 20 00_46d85251](https://github.com/user-attachments/assets/40680520-7f08-4427-ac3c-6a575965bb23)
+![WhatsApp Image 2025-10-27 at 21 20 00_15d952e7](https://github.com/user-attachments/assets/5e0406a2-68be-4e2e-8e58-b5e7974d01f4)
+
