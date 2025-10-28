@@ -122,8 +122,14 @@ While all actions were UI-based, Argo CD stores its configuration in:
 
 <img width="1366" height="484" alt="Screenshot (528)" src="https://github.com/user-attachments/assets/5b392d4d-94d3-422e-ae3d-12b027b61288" />
 ![WhatsApp Image 2025-10-28 at 21 53 46_fd9048ed](https://github.com/user-attachments/assets/19cee624-281f-40cd-b7e7-4786376168a3)
+
 ![WhatsApp Image 2025-10-28 at 21 53 43_f3e738b0](https://github.com/user-attachments/assets/47253ab1-0bb9-4a49-9f78-61503f742f43)
+
 ![WhatsApp Image 2025-10-28 at 21 53 43_df9ee9b6](https://github.com/user-attachments/assets/379dc0f0-9958-48a5-b7db-4957e6a7d057)
+
 ![WhatsApp Image 2025-10-28 at 21 53 43_2eedf05c](https://github.com/user-attachments/assets/470e74e4-0185-48a4-b6d9-e35ad540ecfa)
+
 ![WhatsApp Image 2025-10-28 at 21 53 42_88152f12](https://github.com/user-attachments/assets/e410e549-abf2-423c-acf7-0e9e9ef4a16b)
+
 ![WhatsApp Image 2025-10-28 at 21 53 42_30ad4c01](https://github.com/user-attachments/assets/298777fc-45dc-40cb-87b3-4c25bf153f35)
+
