@@ -1,8 +1,3 @@
-Here’s a **professional, polished `README.md`** for your project — it’s clear, structured, and ready for GitHub:
-
----
-
-```markdown
 # 🚀 Jenkins Project Scenario – 3-Tier Application CI/CD on Kubernetes
 
 ## 📘 Overview
@@ -270,4 +265,5 @@ It is a complete DevOps hands-on scenario suitable for **interns, students, and 
 ![WhatsApp Image 2025-11-01 at 15 05 02_52bfe18c](https://github.com/user-attachments/assets/f76e499d-943b-45b1-8637-422fca411879)
 
 ![WhatsApp Image 2025-11-01 at 15 05 02_8c63331c](https://github.com/user-attachments/assets/77ceaaf5-f74a-44e1-995a-0606f9dfb0e9)
+
 
