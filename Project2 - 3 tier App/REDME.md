@@ -12,7 +12,7 @@ It is designed to showcase **cloud-native DevOps automation**, where every pipel
 ---
 
 ## 📂 Application Source Code
-**Repository:** [deploy-tier-application-backend-Database-proxy-](https://github.com/abdelrahmanonline4/deploy-tier-application-backend-Database-proxy-)
+**Repository:** [project2](https://github.com/Uliwazeer/project2)
 
 The source repository includes three main components:
 
@@ -120,6 +120,8 @@ This setup reflects **modern DevOps best practices** used by production-grade sy
 │   ├── go.sum
 │   └── main.go
 ├── docker-compose.yaml
+├── README.md
+├── project2.pdf
 ├── jenkins
 │   ├── ali.txt
 │   ├── jenkins-deployment.yaml
@@ -235,3 +237,37 @@ It is a complete DevOps hands-on scenario suitable for **interns, students, and 
 `Jenkins` · `Kubernetes` · `CI/CD` · `Docker` · `Helm` · `DevOps` · `Cloud-Native` · `Pipeline` · `3-Tier Application`
 
 `
+![WhatsApp Image 2025-11-01 at 10 40 31_dc1fc290](https://github.com/user-attachments/assets/9e427fdd-1b61-4269-81c8-c04352f33749)
+
+<img width="1102" height="121" alt="Screenshot 2025-11-01 045117" src="https://github.com/user-attachments/assets/35f933fd-ffc2-4608-b2e5-6262f09b45bb" />
+
+<img width="729" height="91" alt="Screenshot 2025-11-01 044521" src="https://github.com/user-attachments/assets/2b1d36ec-f796-4ed0-a6ea-8b5849d9a0db" />
+
+<img width="730" height="178" alt="Screenshot 2025-11-01 044213" src="https://github.com/user-attachments/assets/44508837-6ea7-41cc-b085-6b93f96598fa" />
+
+<img width="1366" height="349" alt="Screenshot (529)" src="https://github.com/user-attachments/assets/0ca4a10f-c2b2-45a0-a19f-ce361ade8b5c" />
+
+![WhatsApp Image 2025-11-01 at 15 05 15_ea4d0a49](https://github.com/user-attachments/assets/9bfb7355-6581-41d3-8303-02c2ba245f04)
+
+![WhatsApp Image 2025-11-01 at 15 05 15_e366b5ec](https://github.com/user-attachments/assets/be13a677-4a7d-4f3d-ac88-6b8f2b843f54)
+
+![WhatsApp Image 2025-11-01 at 15 05 15_a3704197](https://github.com/user-attachments/assets/542fc266-8a51-4e49-a74f-1bb369a0fe85)
+
+![WhatsApp Image 2025-11-01 at 15 05 15_a34f86b0](https://github.com/user-attachments/assets/6213df33-9207-472a-98ee-a580720eee74)
+
+![WhatsApp Image 2025-11-01 at 15 05 06_4eae5e8d](https://github.com/user-attachments/assets/5b7264f9-8809-4477-b037-e8ec21a5baa9)
+
+![WhatsApp Image 2025-11-01 at 15 05 02_f943e5b0](https://github.com/user-attachments/assets/164e9a4a-52b4-4ae6-9c44-97c71e2d6b82)
+
+![WhatsApp Image 2025-11-01 at 15 05 02_ea4ee95a](https://github.com/user-attachments/assets/08918041-42b2-41d5-a529-4f4ef69925c5)
+
+![WhatsApp Image 2025-11-01 at 15 05 02_e674e18f](https://github.com/user-attachments/assets/0340111d-6de2-40e3-bfec-9fffb25d7711)
+
+![WhatsApp Image 2025-11-01 at 15 05 02_be595367](https://github.com/user-attachments/assets/165bda09-e62a-448b-965b-500edd138e16)
+
+![WhatsApp Image 2025-11-01 at 15 05 02_22211a82](https://github.com/user-attachments/assets/4a29e126-b114-4892-983b-01b358a19035)
+
+![WhatsApp Image 2025-11-01 at 15 05 02_52bfe18c](https://github.com/user-attachments/assets/f76e499d-943b-45b1-8637-422fca411879)
+
+![WhatsApp Image 2025-11-01 at 15 05 02_8c63331c](https://github.com/user-attachments/assets/77ceaaf5-f74a-44e1-995a-0606f9dfb0e9)
+
