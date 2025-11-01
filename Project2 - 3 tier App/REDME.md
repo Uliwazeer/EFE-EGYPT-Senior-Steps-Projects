@@ -155,42 +155,89 @@ This setup reflects **modern DevOps best practices** used by production-grade sy
 ## 🪄 Sample Jenkinsfile Overview
 ```groovy
 pipeline {
-  agent any
-  stages {
-    stage('Source') {
-      steps {
-        git branch: 'main', url: 'https://github.com/abdelrahmanonline4/deploy-tier-application-backend-Database-proxy-.git'
-      }
+    agent any
+
+    environment {
+        DOCKERHUB_USER = 'aliwazeer'
+        DOCKERHUB_CREDENTIALS = credentials('dockerhub') // Jenkins credential ID
+        IMAGE_TAG = "${BUILD_NUMBER}"
+        K8S_NAMESPACE = 'dev'
+        USE_MINIKUBE = false // true لو عايز تبني على Minikube، false لو هتبني على DockerHub
     }
-    stage('Build') {
-      steps {
-        sh 'docker build -t myapp-backend:${BUILD_NUMBER} ./backend'
-        sh 'docker build -t myapp-proxy:${BUILD_NUMBER} ./proxy'
-        sh 'docker build -t myapp-database:${BUILD_NUMBER} ./database'
-      }
+
+    stages {
+
+        stage('Checkout Code') {
+            steps {
+                echo '📦 Fetching source code...'
+                checkout scm
+            }
+        }
+
+        stage('Build & Push Image') {
+            steps {
+                script {
+                    if (env.USE_MINIKUBE == 'true') {
+                        echo '🐳 Building Docker image inside Minikube...'
+                        sh '''
+                            eval $(minikube docker-env)
+                            docker build -t backend:${IMAGE_TAG} ./backend
+                        '''
+                    } else {
+                        echo '🚀 Building and pushing image to DockerHub using Kaniko...'
+                        sh '''
+                            mkdir -p /tmp/.docker
+
+                            cat <<EOF > /tmp/.docker/config.json
+                            {
+                                "auths": {
+                                    "https://index.docker.io/v1/": {
+                                        "auth": "$(echo -n "$DOCKERHUB_USER:$DOCKERHUB_CREDENTIALS_PSW" | base64)"
+                                    }
+                                }
+                            }
+                            EOF
+
+                            /kaniko/executor \
+                              --context ./backend \
+                              --dockerfile ./backend/Dockerfile \
+                              --destination $DOCKERHUB_USER/backend:$IMAGE_TAG \
+                              --cleanup
+                        '''
+                    }
+                }
+            }
+        }
+
+        stage('Deploy to Kubernetes') {
+            steps {
+                echo '☸️ Deploying to Kubernetes...'
+                sh '''
+                    # إنشاء namespace لو مش موجود
+                    kubectl get ns $K8S_NAMESPACE || kubectl create ns $K8S_NAMESPACE
+
+                    # تطبيق ملفات الـ Kubernetes
+                    kubectl apply -f K8S/ -n $K8S_NAMESPACE
+
+                    # تحديث صورة backend
+                    if [ "$USE_MINIKUBE" = "true" ]; then
+                        kubectl set image deployment/backend-deployment backend=backend:${IMAGE_TAG} -n $K8S_NAMESPACE
+                    else
+                        kubectl set image deployment/backend-deployment backend=$DOCKERHUB_USER/backend:${IMAGE_TAG} -n $K8S_NAMESPACE
+                    fi
+                '''
+            }
+        }
     }
-    stage('Push') {
-      steps {
-        sh 'docker push myrepo/myapp-backend:${BUILD_NUMBER}'
-        sh 'docker push myrepo/myapp-proxy:${BUILD_NUMBER}'
-        sh 'docker push myrepo/myapp-database:${BUILD_NUMBER}'
-      }
+
+    post {
+        success {
+            echo '✅ Deployment Successful!'
+        }
+        failure {
+            echo '❌ Deployment Failed!'
+        }
     }
-    stage('Deploy') {
-      steps {
-        sh 'kubectl apply -f k8s/deployment.yaml -n dev'
-      }
-    }
-    stage('Smoke Test') {
-      steps {
-        sh 'curl -f http://app-dev/health || exit 1'
-      }
-    }
-  }
-  post {
-    success { echo '✅ Deployment succeeded!' }
-    failure { echo '❌ Deployment failed.' }
-  }
 }
 ````
 
@@ -265,5 +312,6 @@ It is a complete DevOps hands-on scenario suitable for **interns, students, and 
 ![WhatsApp Image 2025-11-01 at 15 05 02_52bfe18c](https://github.com/user-attachments/assets/f76e499d-943b-45b1-8637-422fca411879)
 
 ![WhatsApp Image 2025-11-01 at 15 05 02_8c63331c](https://github.com/user-attachments/assets/77ceaaf5-f74a-44e1-995a-0606f9dfb0e9)
+
 
 
