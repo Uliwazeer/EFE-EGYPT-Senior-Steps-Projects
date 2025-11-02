@@ -1,4 +1,5 @@
 # 🚀 Jenkins Project Scenario – 3-Tier Application CI/CD on Kubernetes
+![download](https://github.com/user-attachments/assets/9ceb8e9e-dde2-4b1d-80a0-e4d669a45812)
 
 ## 📘 Overview
 This project demonstrates a **Complete CI/CD Pipeline for a 3-Tier Application** (Backend, Proxy, Database) using **Jenkins running as a Pod on Kubernetes**.  
@@ -312,6 +313,7 @@ It is a complete DevOps hands-on scenario suitable for **interns, students, and 
 ![WhatsApp Image 2025-11-01 at 15 05 02_52bfe18c](https://github.com/user-attachments/assets/f76e499d-943b-45b1-8637-422fca411879)
 
 ![WhatsApp Image 2025-11-01 at 15 05 02_8c63331c](https://github.com/user-attachments/assets/77ceaaf5-f74a-44e1-995a-0606f9dfb0e9)
+
 
 
 
