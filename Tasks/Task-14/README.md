@@ -188,4 +188,10 @@ In this lab, you:
 * Created and validated a **CronJob** that runs every minute.
 
 This setup helps ensure **resource consistency** and **automated task scheduling** in your OpenShift environment.
+<img width="1366" height="768" alt="Screenshot (543)" src="https://github.com/user-attachments/assets/00a8d39c-315f-4d67-b29d-6d24e2995048" />
+<img width="1366" height="768" alt="Screenshot (542)" src="https://github.com/user-attachments/assets/9799a645-a702-4581-978d-28f7afc3bcb9" />
+<img width="1366" height="768" alt="Screenshot (541)" src="https://github.com/user-attachments/assets/d88a63c0-135d-47fe-aa8d-62dce378dd68" />
+<img width="1366" height="768" alt="Screenshot (540)" src="https://github.com/user-attachments/assets/c92a16ac-4af0-4ab0-a4a2-0c84f86ff8a3" />
+<img width="1366" height="768" alt="Screenshot (539)" src="https://github.com/user-attachments/assets/c8dab1c0-8a90-479a-b9d8-6b48dbf127f7" />
+
 
