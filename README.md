@@ -1,4 +1,4 @@
-<img width="1100" height="250" alt="download" src="https://github.com/user-attachments/assets/c28d73bb-d374-49f5-b24d-7831ef2dd34c" />
+<img width="1500" height="250" alt="download" src="https://github.com/user-attachments/assets/c28d73bb-d374-49f5-b24d-7831ef2dd34c" />
 
 # 🔐 DevOps Engineer Program — Intensive Scholarship
 
