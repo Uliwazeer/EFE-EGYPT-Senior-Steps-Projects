@@ -128,3 +128,6 @@ In this lab, we successfully:
 
 This approach is useful for **system checks**, **debug tasks**, or **maintenance operations** that require privileged access in OpenShift.
 
+![WhatsApp Image 2025-11-04 at 20 39 48_3c4c9d7d](https://github.com/user-attachments/assets/334cd92f-0565-42cc-9aec-295e62805ef2)
+![WhatsApp Image 2025-11-04 at 20 41 45_239f1664](https://github.com/user-attachments/assets/26e82561-802f-4f3b-ac50-4fc278de45f3)
+
