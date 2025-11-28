@@ -17,7 +17,7 @@ services:
   ## Application
   app01:
     build:
-      context: ./tom-app
+      context: ./app
     image: tomcat-vp-app
     container_name: app01
     ports:
